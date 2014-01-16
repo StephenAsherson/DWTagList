@@ -7,15 +7,16 @@
 
 #import "DWTagList.h"
 #import <QuartzCore/QuartzCore.h>
+#import "AppStyleConstants.h"
 
-#define CORNER_RADIUS 10.0f
+#define CORNER_RADIUS 12.0f
 #define LABEL_MARGIN_DEFAULT 7.0f
 #define BOTTOM_MARGIN_DEFAULT 7.0f
-#define FONT_SIZE_DEFAULT 13.0f
+#define FONT_SIZE_DEFAULT 16.0f
 #define HORIZONTAL_PADDING_DEFAULT 7.0f
 #define VERTICAL_PADDING_DEFAULT 5.0f
 #define BACKGROUND_COLOR [UIColor clearColor]
-#define TEXT_COLOR [UIColor darkGrayColor]
+#define TEXT_COLOR [UIColor lightGrayColor]
 #define TEXT_SHADOW_COLOR [UIColor clearColor]
 #define TEXT_SHADOW_OFFSET CGSizeMake(0.0f, 0.0f)
 #define BORDER_COLOR [UIColor lightGrayColor].CGColor
@@ -50,7 +51,7 @@
         [self setClipsToBounds:YES];
         self.automaticResize = DEFAULT_AUTOMATIC_RESIZE;
         self.highlightedBackgroundColor = HIGHLIGHTED_BACKGROUND_COLOR;
-        self.font = [UIFont systemFontOfSize:FONT_SIZE_DEFAULT];
+        self.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:FONT_SIZE_DEFAULT];
         self.labelMargin = LABEL_MARGIN_DEFAULT;
         self.bottomMargin = BOTTOM_MARGIN_DEFAULT;
         self.horizontalPadding = HORIZONTAL_PADDING_DEFAULT;
@@ -61,7 +62,7 @@
         self.textColor = TEXT_COLOR;
         self.textShadowColor = TEXT_SHADOW_COLOR;
         self.textShadowOffset = TEXT_SHADOW_OFFSET;
-        self.selectedBGColor = SELECTED_BACKGROUND_COLOR;
+        self.selectedBGColor = kAppPrimaryColour;
         self.selectedBorderColor = SELECTED_BORDER_COLOR;
         
         self.tagAppearanceLookup = [[NSMutableDictionary alloc] init];
@@ -75,7 +76,7 @@
         [self addSubview:view];
         [self setClipsToBounds:YES];
         self.highlightedBackgroundColor = HIGHLIGHTED_BACKGROUND_COLOR;
-        self.font = [UIFont systemFontOfSize:FONT_SIZE_DEFAULT];
+        self.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:FONT_SIZE_DEFAULT];
         self.labelMargin = LABEL_MARGIN_DEFAULT;
         self.bottomMargin = BOTTOM_MARGIN_DEFAULT;
         self.horizontalPadding = HORIZONTAL_PADDING_DEFAULT;
@@ -86,7 +87,7 @@
         self.textColor = TEXT_COLOR;
         self.textShadowColor = TEXT_SHADOW_COLOR;
         self.textShadowOffset = TEXT_SHADOW_OFFSET;
-        self.selectedBGColor = SELECTED_BACKGROUND_COLOR;
+        self.selectedBGColor = kAppPrimaryColour;
         self.selectedBorderColor = SELECTED_BORDER_COLOR;
 
         self.tagAppearanceLookup = [[NSMutableDictionary alloc] init];
