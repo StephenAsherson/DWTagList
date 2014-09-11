@@ -9,7 +9,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "AppStyleConstants.h"
 
-#define CORNER_RADIUS 12.0f
+#define CORNER_RADIUS 7.0f
 #define LABEL_MARGIN_DEFAULT 7.0f
 #define BOTTOM_MARGIN_DEFAULT 7.0f
 #define FONT_SIZE_DEFAULT 15.0f
@@ -51,7 +51,7 @@
         [self setClipsToBounds:YES];
         self.automaticResize = DEFAULT_AUTOMATIC_RESIZE;
         self.highlightedBackgroundColor = HIGHLIGHTED_BACKGROUND_COLOR;
-        self.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:FONT_SIZE_DEFAULT];
+        self.font = [UIFont fontWithName:kAppRegularFontName size:FONT_SIZE_DEFAULT];
         self.labelMargin = LABEL_MARGIN_DEFAULT;
         self.bottomMargin = BOTTOM_MARGIN_DEFAULT;
         self.horizontalPadding = HORIZONTAL_PADDING_DEFAULT;
@@ -76,7 +76,7 @@
         [self addSubview:view];
         [self setClipsToBounds:YES];
         self.highlightedBackgroundColor = HIGHLIGHTED_BACKGROUND_COLOR;
-        self.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:FONT_SIZE_DEFAULT];
+        self.font = [UIFont fontWithName:kAppRegularFontName size:FONT_SIZE_DEFAULT];
         self.labelMargin = LABEL_MARGIN_DEFAULT;
         self.bottomMargin = BOTTOM_MARGIN_DEFAULT;
         self.horizontalPadding = HORIZONTAL_PADDING_DEFAULT;
