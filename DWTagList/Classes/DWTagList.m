@@ -23,8 +23,8 @@
 #define BORDER_WIDTH 1.0f
 #define HIGHLIGHTED_BACKGROUND_COLOR [UIColor colorWithRed:0.40 green:0.80 blue:1.00 alpha:0.5]
 #define DEFAULT_AUTOMATIC_RESIZE NO
-#define SELECTED_BACKGROUND_COLOR [UIColor colorWithRed:(51.0/255.0) green:(170.0/255.0) blue:(220.0/255.0) alpha:1.00]
-#define SELECTED_BORDER_COLOR [UIColor colorWithRed:(51.0/255.0) green:(170.0/255.0) blue:(220.0/255.0) alpha:1.00]
+#define SELECTED_BACKGROUND_COLOR [UIColor colorWithRed:(52.0/255.0) green:(152.0/255.0) blue:(219.0/255.0) alpha:1.00]
+#define SELECTED_BORDER_COLOR [UIColor colorWithRed:(52.0/255.0) green:(152.0/255.0) blue:(219.0/255.0) alpha:1.00]
 
 @interface DWTagList()
 
